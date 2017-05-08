@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>
+Word Record
+</title>
+<body>
+<h1>wordlist</h1>
+{% if word_list %}
+<ul>
+{% for words in word_list %}
+<td>{{ words.words_text }} {{ words.words_number }}</td><br/>
+{% endfor %}
+</ul>{% else %}<p>No result.</p>
+{% endif %}</body>
+</head>
+</html>
